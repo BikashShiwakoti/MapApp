@@ -1,0 +1,62 @@
+<!-- "StAuth10244: I Bikash Shiwakoti, 000891600 certify that this material is my original work.
+ No other person's work has been used without due acknowledgement. I have not made my work available to anyone else." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamilton Map</title>
+    <link rel="stylesheet" href="style.css">
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF2K4MVXawaKO0IQONBA5Jc04mBIfbdxE&callback=initMap"></script>
+
+</head>
+<body>
+    <h1 class="text-center text-light bg-secondary">Hamilton Map</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="address">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">Address</span>
+                        <input type="text" id="address" size="20" style="font-size:22px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <button type="button" id="addressButton" class="btn btn-info btn-sm" >Locate</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="map"></div>
+        <div class="typeButton">
+            <button type="button" id="fallButton" class="btn btn-info btn-sm mb-2">Water Falls</button>
+            <button type="button" id="museumButton" class="btn btn-info btn-sm m-2">Museum</button>
+            <button type="button" id="show" class="btn btn-info btn-sm">Show All</button>
+            <button type="button" id="geolocate" class="btn btn-info btn-sm m-2" >Geolocate</button>
+        </div>
+    <div>
+       
+            <strong>Destinations:</strong>
+            <select id="end">
+              <option value="Little Davis Falls, ON">Little Davis Falls</option>
+              <option value="Lower Punchbowl Falls,ON">Lower Punchbowl Falls</option>
+              <option value="Billy Green Falls, ON">Billy Green Falls</option>
+              <option value="Centinnial Falls, ON">Centinnial Falls</option>
+              <option value="Glover's Falls, ON">Glover\'s Falls</option>
+              <option value="31 Service Battalion Museum, ON">31 Service Battalion Museum</option>
+              <option value="Canadian Warplane Heritage Museum,ON">Canadian Warplane Heritage Museum</option>
+              <option value="The Hamilton Military Museum, ON">The Hamilton Military Museum</option>
+              <option value="The Hamilton Toy Museum, ON">The Hamilton Toy Museum</option>
+              <option value="Hamilton Museum of Steam & Technology, ON">Hamilton Museum of Steam & Technology</option>
+            </select>
+     </div>
+     <button type="button" id="direction" class="btn btn-info btn-sm">Search Route</button>
+
+
+    
+    <script src="script.js"></script>   
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

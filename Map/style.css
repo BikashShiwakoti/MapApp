@@ -1,0 +1,18 @@
+/* "StAuth10244: I Bikash Shiwakoti, 000891600 certify that this material is my original work. 
+No other person's work has been used without due acknowledgement. I have not made my work available to anyone else."*/
+#map{ 
+    height: 700px;
+    width: 100%;
+}
+.address{
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+}
+.typeButton{
+    position: absolute;
+    top: 200px;
+    left: 60%;
+    z-index: 1;
+}
